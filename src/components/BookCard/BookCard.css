@@ -1,0 +1,133 @@
+.book-card{
+    position: relative;
+    min-width: 15rem;
+    padding:1rem;
+    background-color: #FFF;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.2s;
+    background: -webkit-linear-gradient(top, rgb(219, 219, 219) 0%,rgb(255, 255, 255) 100%);
+}
+
+.book-card:hover{
+    transform: scale(1.02);
+    box-shadow: 0.3rem 0.3rem 0.8rem rgba(0,0,0,0.3);
+}
+
+.book-card__image{
+    width: 12rem;
+    height: 14rem;
+    border-radius: 0 1.5rem 0 1.5rem;
+    border: 1px solid #bebebe;
+    transition: 0.3s;
+}
+
+.book-card__image:hover{
+    transform: scale(1.25);
+    border: none
+}
+
+.book-card__title{
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top:auto;
+    padding: 0.5rem;
+}
+
+.book-card__title:hover{
+    color:#b90707;
+    text-decoration: underline;
+}
+
+.price-container{
+    display: flex;
+    width: 100%;
+    margin-top: auto;
+    /* padding-top: 1rem; */
+    border-top: 1px solid #d8d8d8;
+
+    justify-content: center;
+    gap: 2rem;
+}
+
+.book-card__price{
+    font-size: 1.5rem;
+    align-self: flex-start;
+}
+
+.book-card__price[data-free=true]{
+    font-weight: bold;
+    color: rgb(84, 168, 0);
+}
+
+.counter__button{
+    padding: 0.5rem;
+    width: 2rem;
+    border-radius: 3px;
+    border: none;
+    background-color:#d3d3d3;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.counter__button:hover{
+transform: scale(1.1);
+}
+
+.counter__button[disabled]{
+    cursor:default;
+    background-color:#f0f0f0;
+}
+
+.book-card__footer{
+    width: 100%;
+    display: flex;
+    gap:0.3rem;
+    align-items: center;
+}
+
+.favorite-button{
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.favorite-button:hover{
+    cursor: pointer;
+    filter: brightness(0.8);
+    transform: scale(1.1);
+}
+
+.remove-card{
+    position: absolute;
+    top:.7rem;
+    right:.7rem;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 1rem;
+    background-color: #bbbbbb;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.remove-card:hover{
+    background-color: #b90707;
+}
+
+.remove-card::before,.remove-card::after{
+    position: absolute;
+    content: '';
+    top:.5rem;
+    left:.96rem;
+    width: 1px;
+    height: 1rem;
+    background-color: #fff;
+    transform: rotate(45deg);
+}
+
+.remove-card::after{
+    transform: rotate(-45deg);
+}
+

@@ -1,0 +1,19 @@
+.button {
+	padding: 0.5rem 1rem;
+	font-size: 16px;
+	border: none;
+	border-radius: 20px;
+	transition: 0.3s;
+	margin-left: 15px;
+    cursor: pointer;
+}
+.button:active{
+    color: black;
+    background-color: red;
+}
+
+.button .button-submit {
+	background-color: rgba(137, 43, 226, 0.582);
+	color: #fff;
+	outline: 0;
+}

@@ -9,7 +9,7 @@ const MainHeader = () => {
 			<Input
 				type={"text"}
 				name={"Search"}
-				className={"input_submit"}
+				
 				isEmpty={false}
 				isValid={false}
 				id={""}
@@ -18,16 +18,14 @@ const MainHeader = () => {
 			<Button
 				className="button button-submit"
 				content="Sign-in"
-				callback={() => {}}
-				isActive={true}
-				buttonStyle={{backgroundColor: 'rgb(232, 66, 66)'}}
+				callback={() => { } }
+				isActive={true} children={""}				
 			/>
 			<Button
 				className="button button-submit"
 				content="Sign-up"
-				callback={() => {}}
-				isActive={true}
-			/>
+				callback={() => { } }
+				isActive={true} children={""}			/>
 		</div>
 	);
 };

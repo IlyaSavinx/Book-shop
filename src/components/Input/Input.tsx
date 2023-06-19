@@ -1,11 +1,11 @@
 import { IInput } from "../../types";
 // import './input.css';
 
-const Input = ({ type, id,className, name, value, isRequired, callback, isValid, isEmpty, isEnable, placeholder }: IInput) => {
+const Input = ({ type, id, name, value, isRequired, callback, isValid, isEmpty, isEnable, placeholder }: IInput) => {
 	return (
 		
 		<input 
-            className={className}
+            // className={className}
             id={id}
             name={name}
             value ={value}
@@ -16,6 +16,7 @@ const Input = ({ type, id,className, name, value, isRequired, callback, isValid,
             required={isRequired}
             disabled={isEnable}
             onChange={(e) => { callback(e) }}
+            
         />
 	
 	 )

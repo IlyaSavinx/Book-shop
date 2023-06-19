@@ -1,7 +1,0 @@
-const SET_THEME = 'SET_THEME';
-const SET_SEARCH_ACTIVE = 'SET_SEARCH_ACTIVE';
-
-export {
-    SET_THEME,
-    SET_SEARCH_ACTIVE,
-}

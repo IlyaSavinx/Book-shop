@@ -1,4 +1,4 @@
-/* .book-card{
+.book-card{
     position: relative;
     min-width: 15rem;
     padding:1rem;
@@ -20,14 +20,14 @@
     width: 12rem;
     height: 14rem;
     border-radius: 0 1.5rem 0 1.5rem;
-    border: 1px solid #bebebe;
+    /* border: 1px solid #bebebe; */
     transition: 0.3s;
 }
 
-.book-card__image:hover{
+/* .book-card__image:hover{
     transform: scale(1.25);
     border: none
-}
+} */
 
 .book-card__title{
     text-align: center;
@@ -46,7 +46,7 @@
     display: flex;
     width: 100%;
     margin-top: auto;
-    /* padding-top: 1rem; */
+    padding-top: 1rem;
     border-top: 1px solid #d8d8d8;
 
     justify-content: center;
@@ -129,5 +129,5 @@ transform: scale(1.1);
 
 .remove-card::after{
     transform: rotate(-45deg);
-} */
+}
 

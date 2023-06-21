@@ -1,2 +1,1 @@
- //export {default as BookCard} from './BookCard'
- export {}
+export {default as BookCard} from './BookCard'

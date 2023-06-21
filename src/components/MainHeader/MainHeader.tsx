@@ -1,6 +1,7 @@
 import "./mainHeader.css";
 import { Button } from "../Button";
 import { Input } from "../Input";
+import { CartButton } from "../CartButton";
 
 const MainHeader = () => {
 	return (
@@ -26,7 +27,9 @@ const MainHeader = () => {
 				content="Sign-up"
 				callback={() => { } }
 				isActive={true} children={""}			/>
+		<CartButton />
 		</div>
+		
 	);
 };
 

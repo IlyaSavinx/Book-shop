@@ -7,8 +7,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    transition: 0.2s;
-    background: -webkit-linear-gradient(top, rgb(219, 219, 219) 0%,rgb(255, 255, 255) 100%);
+    transition: 0.1s;
+    background: -webkit-linear-gradient(top, rgb(153, 231, 135) 0%,rgb(255, 255, 255) 100%);
 }
 
 .book-card:hover{
@@ -47,14 +47,14 @@
     width: 100%;
     margin-top: auto;
     padding-top: 1rem;
-    border-top: 1px solid #d8d8d8;
+    border-top: 1px solid #63ac5a;
 
     justify-content: center;
     gap: 2rem;
 }
 
 .book-card__price{
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     align-self: flex-start;
 }
 

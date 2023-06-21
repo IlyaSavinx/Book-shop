@@ -2,7 +2,7 @@
 	width: 100%;
 	height: 60px;
 	display: flex;
-	background: rgb(32, 32, 32);
+	background: -webkit-linear-gradient(top, rgb(153, 231, 135) 0%,rgb(255, 255, 255) 100%);
 	align-items: center;
 	justify-content: space-around;
 	gap: 20px;
@@ -14,7 +14,7 @@
 }
 
 .header-logo {
-	color: white;
+	color: rgb(37, 144, 10);
 	font-family: "Mogra", cursive;
 	cursor: pointer;
 	font-size: 35px;

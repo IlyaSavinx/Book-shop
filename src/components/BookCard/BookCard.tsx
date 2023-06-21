@@ -5,6 +5,8 @@ import './BookCard.css'
 import { useDispatch, useSelector } from 'react-redux';
 // import { setFavoriteBook, removeFavoriteBook, setViewedBook, removeViewedBook, setCartBook, setActivePage } from '../../redux/action-creators';
 import { useNavigate } from 'react-router-dom';
+import { AddToCartButton } from '../AddToCartButton';
+import FavoriteIcon from '../Icons/FavoriteIcon';
 // import FavoriteIcon from '../Icons/FavoriteIcon';
 // import { AddToCartButton } from '../AddToCartButton';
 
@@ -60,16 +62,10 @@ const BookCard = ({title, subtitle, isbn13, price, image}: IBookCard) => {
         <div className="price-container">
             <div className="book-card__price" data-free={price[1] === '0'}>{price[1] !== '0' ? `${price}` : 'FREE'}</div>
         </div>
-        {/* <footer className="book-card__footer">
+        <footer className="book-card__footer">
                 <AddToCartButton bookCartStatus={bookCartStatus} title={title} subtitle={subtitle} isbn13={isbn13} price={price} count={1} image={image} />
-            {activePage !== 'favorites' ?
-                <div className="favorite-button" title='Add to favorites' onClick={() => handleBookmarkClick({ title, subtitle, isbn13, price, image })}>
-                <FavoriteIcon width='25' height='25' color={isFavorite?'#FF6600':'#d3d3d3'} />
-                </div>
-                : <div className="remove-card" title='Remove from favorites' onClick={() => handleBookmarkClick({ title, subtitle, isbn13, price, image })} />}
-            {activePage === 'viewed'?<div className="remove-card" title='Remove from viewed' onClick={() => handleRemoveClick(isbn13)}/>:<></>}
-            
-        </footer> */}
+         
+        </footer>
 
     </div>;
 };

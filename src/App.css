@@ -2,7 +2,7 @@ body {
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
-	background-color: rgba(215, 215, 243, 0.897);
+	background-color: rgba(196, 225, 182, 0.897);
 }
 .container {
 	max-width: 1240px;

@@ -4,25 +4,22 @@ import { MainHeader } from "./components";
 import BookCardGrid from "./components/BookCardGrid/BookCardGrid";
 import { SelectedBookPage } from "./components/SelectedBookPage";
 import { NewBookPage } from "./components/NewBookPage";
+import { SearchBookPage } from "./components/SearchBookPage";
 
 function App() {
 	return (
-    
-      <BrowserRouter>
-        <MainHeader />
-      <BookCardGrid />
-      <Routes>
-        
-      <Route path='books' >
-              <Route path='new' element={<NewBookPage/>}/>
-              <Route path=':bookIsbn' element={<SelectedBookPage/>}/>
-            </Route>
-              
-            {/* <Route path='search' element={<SearchBookPage/>}/> */}
-        </Routes>
-      </BrowserRouter>
-     
-		
+		<BrowserRouter>
+			<MainHeader />
+			{/* <BookCardGrid /> */}
+			<Routes>
+				<Route path="books">
+					<Route path="new" element={<NewBookPage />} />
+					<Route path=":bookIsbn" element={<SelectedBookPage />} />
+				</Route>
+
+				<Route path="search" element={<SearchBookPage />} />
+			</Routes>
+		</BrowserRouter>
 	);
 }
 

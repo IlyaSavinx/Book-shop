@@ -1,6 +1,5 @@
 import { BookCardsGrid } from "../BookCardGrid"
 import { CartPopup } from "../CartPopup"
-import { MainHeader } from "../MainHeader"
 import { useSelector, useDispatch } from 'react-redux';
 import { IStoreState } from '../../types';
 import { useEffect } from 'react';
@@ -16,9 +15,6 @@ const NewBookPage = () => {
 
     return (
         <div className="page-container">
-
-            <MainHeader />
-           
             <BookCardsGrid />
             {cartPopupStatus?<CartPopup />:<></>}
         </div>

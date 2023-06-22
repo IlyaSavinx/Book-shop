@@ -33,10 +33,10 @@ const BookCardGrid = () => {
         const { activePage, searchRequest} = useSelector((state: IStoreState) => state.ui);
         // const message = getMessage(activePage, searchRequest)
         
-        useEffect(() => {
-            if (activePage ==='new')
-                dispatch(loadNewBooks());
-        }, []);
+        // useEffect(() => {
+        //     if (activePage ==='new')
+        //         dispatch(loadNewBooks());
+        // }, []);
         
         let booksArr: IBookInfo[]=[]
         switch (activePage){

@@ -14,7 +14,7 @@
     color:#fff;
     border:none;
 
-    border-radius: 0.3rem;
+    border-radius: 59px;
     cursor:pointer;
     transition: 0.3s;
     overflow: hidden;
@@ -44,7 +44,7 @@ transition: 0.4s;
     background-color: rgb(84, 168, 0);
     color:#fff;
     border:none;
-    border-radius: 0.3rem;
+    border-radius: 59px;
 }
 
 .book__container .add-to-cart, .book__container .in-cart{

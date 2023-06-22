@@ -20,7 +20,8 @@
     height: 80vh;
     background-color: #fff;
     padding-top: 2rem;
-    
+    background-color: rgb(75, 197, 75);
+    border-radius: 10px;
 }
 
 .cart__book-list{
@@ -48,8 +49,8 @@
     position: relative;
     display: flex;
     align-items: center;
-    border: 1px solid #cccccc;
-    border-radius: 1rem;
+    border: 1px solid #000000;
+    /* border-radius: 1rem; */
     padding: 1rem;
 }
 
@@ -83,7 +84,7 @@
 
 .book-cart__price{
     font-size: 1.5rem;
-    color: brown;
+    color: rgb(0, 0, 0);
 }
 
 .book-cart__price[data-free=true]{
@@ -125,7 +126,8 @@
     display: flex;
     gap: 2rem;
     padding: 2rem;
-    background-color: rgb(185, 185, 185);
+    background-color: rgb(170, 251, 159);
+    border-radius: 10px;
 }
 
 .cart__total{
@@ -167,15 +169,14 @@
     background-color: transparent;
     color:#646464;
     padding: 1rem 2rem;
-    border-radius: 5px;
+    border-radius: 50px;
     cursor: pointer;
     transition: .3s;
 }
 
 .cart__close-button:hover, .cart__clear-button:hover{
-    transform: scale(1.1);
-    color: brown;
-    border-color: brown;
+    color: rgb(255, 0, 0);
+    border-color: rgb(255, 0, 0);
 }
 
 .empty-cart{

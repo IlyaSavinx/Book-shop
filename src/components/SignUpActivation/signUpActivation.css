@@ -1,0 +1,15 @@
+.success-container{
+margin: 100px auto;
+color: white;
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+ 
+}
+.success-title{
+}
+		
+.success-sub-title{
+
+}

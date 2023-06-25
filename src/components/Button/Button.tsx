@@ -1,20 +1,20 @@
-import './button.css';
-import { IButton } from '../../types';
+import { FC } from "react";
+import { IButton } from "../../types";
+import "./button.css";
 
-  const Button = (props: IButton) => {
-  const {content, isActive, callback} = props;
-  return (
-      <button
-          className="button"
-          disabled={!isActive}
-          onClick={() => callback()}
-          style={{opacity: isActive ? 1 : 0.5}}
-      >
-          {props.children || content}
-      </button>
-  )
-  }
-  export default Button;
+export const Button: FC<IButton> = ({
+	className,
+	callback,
+	content,
+	isActive,
+}) => {
+	return (
+		<button type="button" className={className} disabled={isActive} onClick={() => callback()}>
+			{content}
+		</button>
+	);
+};
+export default Button;
 
 // import "./AddToCartButton.css";
 // import { useDispatch, useSelector } from "react-redux";

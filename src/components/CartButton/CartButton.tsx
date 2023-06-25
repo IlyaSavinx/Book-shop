@@ -2,7 +2,6 @@ import "./CartButton.css";
 import { useDispatch, useSelector } from "react-redux";
 import { IStoreState } from "../../types";
 import CartIcon from "../Icons/CartIcon";
-import { Link } from "react-router-dom";
 import { setCartStatus } from "../../redux/action-creators";
 
 const CartButton = () => {

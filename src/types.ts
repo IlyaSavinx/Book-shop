@@ -86,7 +86,7 @@ export interface IIcon {
 }
 
 export interface IUserData {
-	name: string;
+	username: string,
 	email: string;
 	password?: string;
 	id?:number,
@@ -128,4 +128,27 @@ export interface IButton {
     callback: Function,
     isActive?: boolean;
 
+}
+export interface IButton {
+    className: string,
+    content: string,
+    callback: Function,
+    isActive?: boolean;
+
+}
+export interface IInputAutorization {
+    type: string;
+    id: string;
+    name: string,
+	className: string;
+	value?: string;
+	label?: string;
+	placeholder?: string;
+	isEnable?: boolean;
+	isEmpty?: boolean;
+	isValid?: boolean;
+	isRequired?: boolean;
+	error?: string;
+	callback: Function;
+	autoComplete?: string,
 }

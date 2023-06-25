@@ -1,11 +1,9 @@
- 
-import {   useDispatch } from "react-redux";
+import { useDispatch } from "react-redux";
 import { useParams } from "react-router-dom";
 import { useEffect } from "react";
 import { activate } from "../../redux/action-creators";
-import './signUpActivation.css'
+import "./signUpActivation.css";
 import { SignIn } from "../SignIn/SignIn";
-
 
 export const SignUpActivation = () => {
 	const dispatch = useDispatch();
@@ -21,12 +19,12 @@ export const SignUpActivation = () => {
 
 	return (
 		<div className="success-container">
-					<h1 className="success-title">Success</h1>
-		
-				<div className="success-sub-title">
+			<h1 className="success-title">Success</h1>
+
+			<div className="success-sub-title">
 				Email confirmed. Your registration is now completed
-				</div>
-		 <SignIn/>
+			</div>
+			<SignIn />
 		</div>
 	);
 };

@@ -11,7 +11,6 @@ const Input = ({ type, id, value, placeholder, callback }: IInput) => {
                 value ={value}
                 type={type}
                 placeholder={placeholder}
-                // data-empty={isEmpty}
                 onChange={(e) => { callback(e) }}
             />
         </>

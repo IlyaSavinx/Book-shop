@@ -10,7 +10,7 @@ const NewBookPage = () => {
     const dispatch = useDispatch()
     
     useEffect(() => {
-        dispatch(setActivePage('new'))
+        dispatch(setActivePage('books/new'))
     }, []);
 
     return (

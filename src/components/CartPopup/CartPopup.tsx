@@ -1,7 +1,6 @@
 import "./CartPopup.css";
-import { IStoreState, IBookCard, IBooksState, IBookInCart } from '../../types';
+import { IStoreState, IBookInCart } from '../../types';
 import { useDispatch, useSelector } from "react-redux";
-import { useState } from "react";
 import CartItem from "./CartItem";
 import { clearCart, setCartStatus } from "../../redux/action-creators";
 import EmptyCartIcon from '../Icons/EmptyCartIcon';
@@ -53,7 +52,7 @@ const CartPopup = () => {
                     </>
                     : <div className="cart__empty">
                         <EmptyCartIcon width='25' height='25' color={'#000'} />
-                        Cart is empty
+                        Books not
                     </div>
                     }
                 <div className="cart__footer">

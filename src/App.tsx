@@ -12,22 +12,26 @@ import { SignUp } from "./components/SignUp/SignUp";
 import { SignUpActivation } from "./components/SignUpActivation/SignUpActivation";
 
 function App() {
-  const authorizedUser = useSelector((state: IStoreState) => state.user.authorizedUser);
+	const authorizedUser = useSelector(
+		(state: IStoreState) => state.user.authorizedUser
+	);
 	return (
 		<BrowserRouter>
 			<MainHeader />
-			{/* <BookCardGrid /> */}
-      <Routes>
-      <Route path="/" element={true?<BookCardGrid />: <SignIn /> } />
-				<Route path="books"   >
-					<Route path="new" element={<NewBookPage />} />
-					<Route path=":bookIsbn" element={<SelectedBookPage />} />
-				</Route>
+			<Routes>
+				<Route path="/sign_up" element={<SignUp />} />
+				<Route path="/sign_in" element={<SignIn />} />
+				<Route path="activate/:uid/:token" element={<SignUpActivation />} />
+				<Route
+					path="/"
+					element={authorizedUser.username ? <NewBookPage /> : <SignIn />}>
+					<Route path="books">
+						<Route path="new" element={<NewBookPage />} />
+						<Route path=":bookIsbn" element={<SelectedBookPage />} />
+					</Route>
 
-        <Route path="search" element={<SearchBookPage />} />
-        <Route path="/sign_up" element={<SignUp />} />
-					<Route path="/sign_in" element={<SignIn />} />
-					<Route path="activate/:uid/:token" element={<SignUpActivation />} />
+					<Route path="search" element={<SearchBookPage />} />
+				</Route>
 			</Routes>
 		</BrowserRouter>
 	);

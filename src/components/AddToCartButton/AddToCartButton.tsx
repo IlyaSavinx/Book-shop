@@ -1,6 +1,5 @@
 import "./AddToCartButton.css";
-import { useDispatch, useSelector } from "react-redux";
-import { IStoreState } from "../../types";
+import { useDispatch } from "react-redux";
 import CartIcon from "../Icons/CartIcon";
 import { setCartBook } from "../../redux/action-creators";
 import { IBookInCart } from '../../types';

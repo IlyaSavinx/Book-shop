@@ -2,7 +2,6 @@ import { MainHeader } from '../../components';
 import { useSelector, useDispatch } from 'react-redux';
 import { IStoreState } from '../../types';
 import CartPopup from '../CartPopup/CartPopup';
-// import MainMenu from '../MainMenu/MainMenu';
 import { useEffect } from 'react';
 import { setActivePage } from '../../redux/action-creators';
 import { SelectedBook } from '../SelectedBook';

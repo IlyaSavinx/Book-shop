@@ -1,4 +1,4 @@
-import { SET_USER, LOG_OUT } from "../action-types/index";
+import { SET_USER, LOG_OUT, TOGGLE } from "../action-types/index";
 import { IUserData } from "../../types";
 
 const initialState = {
@@ -40,6 +40,21 @@ const userReducer = (state = getInitialState(), action: any) => {
 				},
 			};
 		}
+		case TOGGLE: {
+			const { books } = action;
+            const index = state.books?.findIndex((el: { id: any; }) => el.id === books.id);
+			const newFavorites = [...state?.favorites] || []
+ 
+            if (index === -1) {
+                newFavorites.push(books);
+            } else {
+                newFavorites.splice(index, 1);
+            }
+            return {
+                ...state,
+                favorites: newFavorites,
+            }
+        }
 		
 		default: {
 			return state;
